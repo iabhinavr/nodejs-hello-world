@@ -5,14 +5,53 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Node.js Welcome</title>
+    <style>
+        body, html, ul {
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-color: rgb(119, 21, 211);
+            color: white;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        a {
+            text-decoration: none;
+            color:blanchedalmond;
+        }
+        ul {
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+        }
+        ul li {
+            margin: 0 5px;
+        }
+        ul li a {
+            font-size: .8em;
+            display: inline-block;
+            border-bottom: 1px dashed blanchedalmond;
+            padding: 4px 6px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Hello World! This is our Home Page</h1>
-    <p>Visit <a href="https://nodejs.org">Node.js</a></p>
-    <ul>
-        <li>
-            <a href="/about">About</a>
-        </li>
-    </ul>
+    <div class="container">
+        <h1>Hello World!</h1>
+        <p>This is the home page of a demo app written using <a href="https://nodejs.org">Node.js</a></p>
+        <ul>
+            <li>
+                <a href="/about">About</a>
+            </li>
+            <li>
+                <a href="https://github.com/iabhinavr/nodejs-hello-world">GitHub</a>
+            </li>
+        </ul>
+    </div>
 </body>
 </html>

@@ -5,14 +5,53 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
+    <style>
+        body, html, ul {
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-color: rgb(119, 21, 211);
+            color: white;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        a {
+            text-decoration: none;
+            color:blanchedalmond;
+        }
+        ul {
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+        }
+        ul li {
+            margin: 0 5px;
+        }
+        ul li a {
+            font-size: .8em;
+            display: inline-block;
+            border-bottom: 1px dashed blanchedalmond;
+            padding: 4px 6px;
+        }
+    </style>
 </head>
 <body>
-    <h1>About Us</h1>
-    <p>Hello, I'm Abhinav</p>
-    <ul>
-        <li>
-            <a href="/">Home</a>
-        </li>
-    </ul>
+    <div class="container">
+        <h1>About Me</h1>
+        <p>I'm Abhinav, this is our Node.js Hello World Application</p>
+        <ul>
+            <li>
+                <a href="/">Home</a>
+            </li>
+            <li>
+                <a href="https://github.com/iabhinavr/nodejs-hello-world">GitHub</a>
+            </li>
+        </ul>
+    </div>
 </body>
 </html>
